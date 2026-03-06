@@ -1,0 +1,16 @@
+Processed_Output/
+Data/
+Logs/
+Graphs/
+pycache/
+*.env
+*.log
+*.csv
+*.json
+*.h5
+*.pkl
+*.ipynb_checkpoints/
+*.pyc
+*.pyo
+*.pyd
+__pycache__/

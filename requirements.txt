@@ -1,0 +1,45 @@
+# ===========================================================================
+# RAG Pipeline - Dependencies
+# ===========================================================================
+
+# --- Core LLM & Agent Framework ---
+langgraph>=0.2.0
+langchain>=0.3.0
+langchain-google-genai>=2.0.0
+langchain-text-splitters>=0.3.0
+google-genai>=1.0.0
+
+# --- Embeddings (local, lightweight for M1) ---
+sentence-transformers>=3.0.0
+
+# --- PostgreSQL + pgvector ---
+psycopg2-binary>=2.9.0
+
+# --- Document Extraction ---
+PyMuPDF>=1.24.0            # PDF text extraction (fast, lightweight)
+python-docx>=1.0.0         # DOCX extraction
+python-pptx>=0.6.0         # PPTX extraction
+
+# --- Structured Data ---
+pandas>=2.0.0
+openpyxl>=3.1.0            # XLSX support for pandas
+
+# --- Image Processing ---
+Pillow>=10.0.0
+
+# --- Environment ---
+python-dotenv>=1.0.0
+
+fastapi>=0.115.0
+uvicorn>=0.30.0
+
+# --- Visualize Tabular Data ---
+psycopg2-binary 
+# tabulate
+rich
+
+# ===========================================================================
+# OPTIONAL - Install only if using local/offline processing
+# ===========================================================================
+# pytesseract>=0.3.10      # pip install pytesseract (also needs: brew install tesseract)
+# openai-whisper>=20231117  # pip install openai-whisper (WARNING: ~1.5GB+ model download, heavy on 8GB RAM)
